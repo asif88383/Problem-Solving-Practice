@@ -47,3 +47,14 @@ for i in range(1, n+1):
 answer = [[i, j, k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if ((i + j + k) != n)]
 print(answer)
 
+    # Find the Runner-Up Score!
+    arr = list(arr)
+    x = max(arr)
+    y = -999999
+    
+    for i in range(0,n):
+        if(arr[i]<x and arr[i]>y):
+            y = arr[i]
+            
+    print(y)
+
