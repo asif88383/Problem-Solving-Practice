@@ -38,3 +38,12 @@ def is_leap(year):
 
 
 
+# Print Function
+for i in range(1, n+1):
+    print(i, end='')
+
+
+# List Comprehensions
+answer = [[i,j,k] for i in range(x) for j in range(y) for k in range(z) if ((i+j+k)!=n)]
+print(answer)
+
